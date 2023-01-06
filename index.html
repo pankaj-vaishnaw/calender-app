@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="footer-container-calendar">
+      <select id="month" onchange="jumpToTheDate()" placeholder="Select The Month">
+        <option value="0">Jan</option>
+        <option value="1">Feb</option>
+        <option value="2">Mar</option>
+        <option value="3">Apr</option>
+        <option value="4">May</option>
+        <option value="5">Jun</option>
+        <option value="6">Jul</option>
+        <option value="7">Aug</option>
+        <option value="8">Sep</option>
+        <option value="9">Oct</option>
+        <option value="10">Nov</option>
+        <option value="11">Dec</option>
+      </select>
+      <select id="year" onchange="jumpToTheDate()"></select>
+    </div>
+
+    <div class="Main-container">
+      <div class="container-calendar">
+        <h3 id="monthAndYear"></h3>
+        
+        <table class="table-calendar" id="calendar" data-lang="en">
+          <thead id="table-header-month"></thead>
+          <tbody id="calendar-body"></tbody>
+        </table>
+      </div>
+      <div class="entertheDate">
+        <input id="value" placeholder=" Enter Any Date" />
+        <button class="enterButtonfordate">Enter</button>
+      </div>
+    </div>
+  </body>
+</html>
